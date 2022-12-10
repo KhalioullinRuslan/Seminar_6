@@ -1,4 +1,6 @@
-﻿Console.Clear();
+﻿// Развернуть массив
+
+Console.Clear();
 const int SIZE = 10;
 const int LEFT_RANGE = 100;
 const int RIGHT_RANGE = 999;
