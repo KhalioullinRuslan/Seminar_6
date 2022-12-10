@@ -3,16 +3,17 @@
 // 3  -> 11
 // 2  -> 10
 
-System.Console.WriteLine("Введите число: ");
-int N =Convert.ToInt32(Console.ReadLine());
-GetBinaryView(N);
-
-void GetBinaryView(int number)
+void ToBinarySystem(int num)
 {
-    if(number <=0) 
+    if(num <= 0)
     {
         return;
     }
-    GetBinaryView(number/2);
-    System.Console.Write(number%2);
+    ToBinarySystem(num/2);
+    System.Console.Write(num%2);
 }
+
+
+System.Console.WriteLine("Введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+ToBinarySystem(number);
